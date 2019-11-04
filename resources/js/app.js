@@ -8,11 +8,11 @@ require('./bootstrap');
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Homepage from './components/Homepage'
-import Create from './components/Create'
-import Read from './components/Read'
-import Update from './components/Update'
-import Comments from './components/Comments'
+import Dashboard from './components/admin/Dashboard'
+import Create from './components/admin/Create'
+import Read from './components/admin/Read'
+import Update from './components/admin/Update'
+import Comments from './components/admin/Comments'
 
 Vue.use(VueRouter)
 
@@ -43,5 +43,5 @@ const router = new VueRouter({
 const app = new Vue({
     el: '#app',
     router,
-    components: { Homepage, Comments }
+    components: { Dashboard, Comments }
 });
